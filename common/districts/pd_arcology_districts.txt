@@ -356,8 +356,10 @@ district_corp_industrial = {
 	}
 
 	allow = {
-		NOT = { has_modifier = resort_colony }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 
 	conversion_ratio = 1
@@ -2138,7 +2140,7 @@ district_arcology_pdtrade = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { NOT = { is_gestalt = yes } }
+			owner = { is_gestalt = no }
 		}
 		text = job_merchant_effect_desc
 	}
@@ -2446,7 +2448,7 @@ district_arcology_vertical_farms = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
-				NOT = { is_spiritualist = yes }
+				is_spiritualist = no
 			}
 		}
 		modifier = {
@@ -2545,7 +2547,7 @@ district_shroud_arcology_temple = {
 			owner = { 
 				is_regular_empire = yes
 				NOT = { has_valid_civic = civic_warrior_culture }
-				NOT = { is_megacorp = yes }
+				is_megacorp = no
 			}
 			NOT = { planet = { is_planet_class = pc_shroudcorpoarc } }
 		}
@@ -2560,7 +2562,7 @@ district_shroud_arcology_temple = {
 			owner = { 
 				is_regular_empire = yes
 				has_valid_civic = civic_warrior_culture
-				NOT = { is_megacorp = yes }
+				is_megacorp = no
 			}
 			NOT = { planet = { is_planet_class = pc_shroudcorpoarc } }
 		}
@@ -2888,8 +2890,10 @@ district_pdnecroarc_temple = {
 			owner = {
 				is_regular_empire = yes
 				is_spiritualist = yes
-				NOT = { has_civic = civic_memorialist }
-				NOT = { has_civic = civic_death_cult }
+				NOR = {
+					has_civic = civic_memorialist
+					has_civic = civic_death_cult
+				}
 				NOT = { has_civic = civic_death_cult_corporate }
 			}
 		}
@@ -2904,8 +2908,10 @@ district_pdnecroarc_temple = {
 			owner = {
 				is_regular_empire = yes
 				is_spiritualist = yes
-				NOT = { has_civic = civic_memorialist }
-				NOT = { has_civic = civic_death_cult }
+				NOR = {
+					has_civic = civic_memorialist
+					has_civic = civic_death_cult
+				}
 				NOT = { has_civic = civic_death_cult_corporate }
 			}
 		}
@@ -2918,8 +2924,10 @@ district_pdnecroarc_temple = {
 			owner = {
 				is_regular_empire = yes
 				is_spiritualist = no
-				NOT = { has_civic = civic_memorialist }
-				NOT = { has_civic = civic_death_cult }
+				NOR = {
+					has_civic = civic_memorialist
+					has_civic = civic_death_cult
+				}
 				NOT = { has_civic = civic_death_cult_corporate }
 			}
 		}
@@ -2934,8 +2942,10 @@ district_pdnecroarc_temple = {
 			owner = {
 				is_regular_empire = yes
 				is_spiritualist = no
-				NOT = { has_civic = civic_memorialist }
-				NOT = { has_civic = civic_death_cult }
+				NOR = {
+					has_civic = civic_memorialist
+					has_civic = civic_death_cult
+				}
 				NOT = { has_civic = civic_death_cult_corporate }
 			}
 		}
