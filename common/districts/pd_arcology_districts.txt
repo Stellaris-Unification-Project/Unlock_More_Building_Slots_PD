@@ -2893,8 +2893,8 @@ district_pdnecroarc_temple = {
 				NOR = {
 					has_civic = civic_memorialist
 					has_civic = civic_death_cult
+					has_civic = civic_death_cult_corporate
 				}
-				NOT = { has_civic = civic_death_cult_corporate }
 			}
 		}
 		modifier = {
@@ -2911,8 +2911,8 @@ district_pdnecroarc_temple = {
 				NOR = {
 					has_civic = civic_memorialist
 					has_civic = civic_death_cult
+					has_civic = civic_death_cult_corporate
 				}
-				NOT = { has_civic = civic_death_cult_corporate }
 			}
 		}
 		text = job_priest_effect_desc
@@ -2927,8 +2927,8 @@ district_pdnecroarc_temple = {
 				NOR = {
 					has_civic = civic_memorialist
 					has_civic = civic_death_cult
+					has_civic = civic_death_cult_corporate
 				}
-				NOT = { has_civic = civic_death_cult_corporate }
 			}
 		}
 		modifier = {
@@ -2945,8 +2945,8 @@ district_pdnecroarc_temple = {
 				NOR = {
 					has_civic = civic_memorialist
 					has_civic = civic_death_cult
+					has_civic = civic_death_cult_corporate
 				}
-				NOT = { has_civic = civic_death_cult_corporate }
 			}
 		}
 		text = job_culture_worker_effect_desc
